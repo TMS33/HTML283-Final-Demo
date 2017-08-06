@@ -1,0 +1,157 @@
+/*基本設定*/
+* {
+    box-sizing: border-box;
+    overflow: auto;
+    padding: 0;
+    margin: 0 auto
+}
+
+ /*設定container*/
+.container-fluid{ width: 100%;}
+.container1, .container2{ width: 1300px;}
+.container3{ width: 900px;}
+
+ /*設定container裡的元素*/
+.content1, .content2, aside, .box, .content3{float: left;}
+
+/*設定元素大小*/
+.box{ width: calc(100%/3);}
+.content1 { width: calc(100%);}
+.content2{ width: calc(100%);}
+aside{ width: calc(100%/12*5);}
+.content3{ width: calc(100%/12*5)}
+
+
+/*設定文字樣式*/
+body { font-family: Avenir, 微軟正黑體, sans-serif; }
+
+/*設定nav+導覽列樣式*/
+nav {  
+    position:relative;
+    width: 100%;
+    top:0;
+    left:0;
+    background-color: #C9D1DB;
+
+}
+
+nav ul{
+    margin: 5px;
+    margin-left: 200px;
+    list-style-type:none;
+    text-align: center; }
+
+nav li{
+    height: 50px;
+    width: 20%;
+    line-height: 50px;
+    color: white;
+    font-size: 20px;
+    float:left;}
+
+/*設定header樣式*/
+.container-fluid{
+    height: 770px;
+    background-repeat: no-repeat;
+}
+.container-fluid img{
+    max-width: 100%; min-width: 100%
+}
+
+/*設定work樣式*/
+h1{
+    margin: 20px;
+    background-color: white;
+    color: black;
+    font-size: 40px;
+    text-align: center;
+}
+
+.container1{
+    height: 1000px;
+    background-image: url(https://source.unsplash.com/nvzvOPQW0gc/1300x1000); 
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+.box{
+    height: 300px;
+    width:  300px;
+    background: #F7FFFB;
+    margin: 60px;
+    padding-top: 120px; 
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+/*設定about me樣式*/
+.container2{
+    height: 600px;
+    background-image: url(https://source.unsplash.com/wsMwDxF8SKA/1300x600);
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-size: 20px;
+    text-align: center;
+}
+
+.content1 img{
+    height: auto;
+    width: 100%;
+
+}
+
+.content1{
+    height: 300px;
+    width: 300px; 
+    border-radius: 15px 50px;
+    position: relative;
+    top: 50px;
+    left: 600px;
+    overflow: hidden;
+ }
+
+.content2{
+    height: 300px;
+    width: 1300px;
+    padding: 100px 50px 0px 300px; 
+    line-height: 2;
+    overflow: hidden;
+}
+
+/*設定contact樣式*/
+.container3{
+    height: 400px;
+    font-size: 20px;
+}
+
+.content3, aside{
+    padding-top: 50px; 
+ }
+ 
+input {
+    font-size: 14px;
+}
+
+.submit{
+    position: relative;
+    left: 150px;
+}
+
+/*設定footer樣式*/
+footer{
+    background: #C9D1DB;
+    color:white;
+    height: 30px;
+    padding-right: 50px;
+    text-align: right;
+}
+
+@media screen and ( max-width:700px) {
+     .container1, .container2 { width: 100%; } 
+     .content1, .content2 { width: 100%; }
+     aside { width: 100%; }
+     .box { width: 100%; } 
+}
