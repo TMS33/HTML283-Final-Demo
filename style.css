@@ -78,14 +78,21 @@ h1{
 .box{
     height: 300px;
     width:  300px;
-    background: #F7FFFB;
     margin: 60px;
-    padding-top: 120px; 
-    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    position: relative;
+    overflow: hidden;
+}
+
+.works {
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 100%;
     text-align: center;
     font-size: 30px;
-    
 }
+
+.box img {width:100%;}
 
 /*設定about me樣式*/
 .container2{
